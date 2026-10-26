@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "DevTools Pass",
+  "version": "1.0.0",
+  "description": "Per-site bypass for debugger traps, DevTools size checks, and inspect-shortcut blocking. Off until you enable a host.",
+  "homepage_url": "https://github.com/Kuret/devtools-pass",
+  "permissions": ["storage", "scripting", "tabs", "webRequest", "webRequestBlocking"],
+  "optional_host_permissions": ["*://*/*"],
+  "background": {
+    "scripts": ["logic.js", "background.js"]
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "DevTools Pass",
+    "default_icon": {
+      "48": "icons/icon-48.png",
+      "96": "icons/icon-96.png"
+    }
+  },
+  "icons": {
+    "48": "icons/icon-48.png",
+    "96": "icons/icon-96.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "devtools-pass@littel.me",
+      "strict_min_version": "128.0"
+    }
+  }
+}

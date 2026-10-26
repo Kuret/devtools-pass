@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>DevTools Pass</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header>
+      <strong>DevTools Pass</strong>
+      <span id="badge" class="badge" data-on="0">off</span>
+    </header>
+    <p id="host" class="host">…</p>
+    <label class="row">
+      <span>Enabled on this host</span>
+      <button id="toggle" type="button" role="switch" aria-checked="false" aria-label="Enabled on this host"></button>
+    </label>
+    <label class="row" for="subs">
+      <span>Include subdomains</span>
+      <input id="subs" type="checkbox" checked />
+    </label>
+    <p id="note" class="note"></p>
+    <h2>Saved hosts</h2>
+    <ul id="list"></ul>
+    <script src="logic.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,8 @@
+test/
+web-ext-artifacts/
+*.xpi
+*.zip
+.git/
+.gitignore
+.web-ext-ignore
+.DS_Store
